@@ -1,5 +1,13 @@
 # kees_wesselink
 
+[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+![Whitespace](Whitespace.png)
+[![Codecov logo](Codecov.png)](https://www.codecov.io)
+
+[![Build Status](https://travis-ci.org/richelbilderbeek/kees_wesselink.svg?branch=master)](https://travis-ci.org/richelbilderbeek/kees_wesselink)
+[![codecov.io](https://codecov.io/github/richelbilderbeek/kees_wesselink/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/kees_wesselink?branch=master)
+
+
 Research project by Kees Wesselink.
 
 ## Scientific articles 
