@@ -1,4 +1,4 @@
-# #include "stdafx.h" //RJCB: Sorry, had to remove this one to check if the project compiles
+// #include "stdafx.h" //RJCB: Sorry, had to remove this one to check if the project compiles
 #include <iostream>
 #include <string>
 #include <algorithm>
