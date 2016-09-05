@@ -10,6 +10,14 @@
 
 Research project by Kees Wesselink.
 
+## Schedule
+
+ * ? progress meeting Richel
+ * Monday 10:30-11:00 TRES coffee break, 580
+ * Monday 16:00-17:00 TRES meeting, Blue Room
+ * Thursday 16:00-17:00 GELIFES lecture, The Eye/Blue Room
+ * Monthly TECE meetings
+
 ## Scientific articles 
 
  * [1] Van Doorn, G. S., & Weissing, F. J. (2001). Ecological versus sexual selection models of sympatric speciation. Selection, 2, 17 - 40. 
