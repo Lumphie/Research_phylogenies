@@ -16,7 +16,7 @@ Research project by Kees Wesselink.
  * Monday 16:00-17:00 TRES meeting, Blue Room
  * Tuesday 10:00-?11:00 progress meeting Richel
  * Thursday 16:00-17:00 GELIFES lecture, The Eye/Blue Room
- * Monthly TECE meetings
+ * Monthly TECE meetings, first at Tuesday September 27th from 9:30-16:00
 
 ## Scientific articles 
 
