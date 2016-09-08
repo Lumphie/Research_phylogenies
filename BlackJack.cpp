@@ -179,7 +179,7 @@ void playPlayer(CardStruct *cardPtr, int &playerTotal, int &numAcesPlayer)
 
         if (playerTotal > 21)
         {
-            if (numAcesPlayer != 0)
+            if (numAcesPlayer > 0)
             {
                 playerTotal -= 10;
                 --numAcesPlayer;
@@ -204,7 +204,7 @@ void playDealer(CardStruct *cardPtr, int &dealerTotal, int &numAcesDealer, int p
 
         if (dealerTotal > 21)
         {
-            if (numAcesDealer != 0)
+            if (numAcesDealer > 0)
             {
                 dealerTotal -= 10;
                 --numAcesDealer;
