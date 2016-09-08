@@ -1,4 +1,3 @@
-// #include "stdafx.h" //RJCB: Sorry, had to remove this one to check if the project compiles
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -73,6 +72,8 @@ void printCard(const Card &card)
 	case Cards::RANK_QUEEN:		std::cout << 'Q'; break;
 	case Cards::RANK_KING:		std::cout << 'K'; break;
 	case Cards::RANK_ACE:		std::cout << 'A'; break;
+    case Cards::MAX_RANKS:
+    default:
 		std::cout << "There was no Rank";
 	}
 
@@ -83,6 +84,8 @@ void printCard(const Card &card)
 	case Cards::SUIT_DIAMOND:	std::cout << 'D'; break;
 	case Cards::SUIT_HEART:		std::cout << 'H'; break;
 	case Cards::SUIT_SPADE:		std::cout << 'S'; break;
+    case Cards::MAX_SUITS:
+    default:
 		std::cout << "There was no Suit";
 	}
 	
@@ -92,7 +95,6 @@ void printCard(const Card &card)
 // prints a complete deck of 52 cards.
 void printDeck(const std::array<Card, 52> &deck)
 {
-	int index = 1;
 	for (const auto &card : deck)
 	{
 		printCard(card);
@@ -147,7 +149,10 @@ int getCardValue(const Card &card)
 	case Cards::RANK_QUEEN:		return 10;
 	case Cards::RANK_KING:		return 10;
 	case Cards::RANK_ACE:		return 11;
-
+    case Cards::MAX_RANKS:
+    default:
+        std::cout << "Error, rank not found. \n";
+        return -1;
 	}
 
 	return 0;
