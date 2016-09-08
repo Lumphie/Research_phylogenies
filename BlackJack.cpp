@@ -38,44 +38,63 @@ namespace Cards
 	};
 }
 
+struct CardStruct
 
-struct Card
 {
 	Cards::Rank rank;
 	Cards::Suit suit;
 };
 
+struct RankStruct
+{
+    Cards::Rank rank;
+    std::string stringRank;
+    int intRank;
+};
+
+static RankStruct rankArray[] {
+    {Cards::RANK_2, "2", 2},
+    {Cards::RANK_3, "3", 3},
+    {Cards::RANK_4, "4", 4},
+    {Cards::RANK_5, "5", 5},
+    {Cards::RANK_6, "6", 6},
+    {Cards::RANK_7, "7", 7},
+    {Cards::RANK_8, "8", 8},
+    {Cards::RANK_9, "9", 9},
+    {Cards::RANK_10, "10", 10},
+    {Cards::RANK_JACK, "J", 10},
+    {Cards::RANK_QUEEN, "Q", 10},
+    {Cards::RANK_KING, "K", 10},
+    {Cards::RANK_ACE, "A", 11},
+    {Cards::MAX_RANKS, "E", -1}
+
+};
+
 // Generate a random number between min and max (inclusive)
 int getRandomNumber(int min, int max)
 {
+    // static used for efficiency, so we only calculate this value once
+    static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);
 
-	static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);  // static used for efficiency, so we only calculate this value once
-																				 // evenly distribute the random number across our range
+    // evenly distribute the random number across our range
 	return static_cast<int>(rand() * fraction * (max - min + 1) + min);
 }
 // prints a Card as a 2 character string (ex, Jack of Spades == "JS")
-void printCard(const Card &card)
-{
+void printCard(const CardStruct &card){
 	// prints the corresponding rank
-	switch (card.rank)
-	{
-	case Cards::RANK_2:			std::cout << '2'; break;
-	case Cards::RANK_3:			std::cout << '3'; break;
-	case Cards::RANK_4:			std::cout << '4'; break;
-	case Cards::RANK_5:			std::cout << '5'; break;
-	case Cards::RANK_6:			std::cout << '6'; break;
-	case Cards::RANK_7:			std::cout << '7'; break;
-	case Cards::RANK_8:			std::cout << '8'; break;
-	case Cards::RANK_9:			std::cout << '9'; break;
-	case Cards::RANK_10:		std::cout << "10"; break;
-	case Cards::RANK_JACK:		std::cout << 'J'; break;
-	case Cards::RANK_QUEEN:		std::cout << 'Q'; break;
-	case Cards::RANK_KING:		std::cout << 'K'; break;
-	case Cards::RANK_ACE:		std::cout << 'A'; break;
-    case Cards::MAX_RANKS:
-    default:
-		std::cout << "There was no Rank";
-	}
+    bool noBreak = true;
+    for (auto &cardNum : rankArray)
+    {
+        if (cardNum.rank == card.rank)
+        {
+            std::cout << cardNum.stringRank;
+            noBreak = false;
+            break;
+        }
+    }
+    if (noBreak)
+    std::cout << "There was no Rank ";
+
 
 	// prints the corresponding suit
 	switch (card.suit)
@@ -87,13 +106,12 @@ void printCard(const Card &card)
     case Cards::MAX_SUITS:
     default:
 		std::cout << "There was no Suit";
+        break;
 	}
-	
 }
 
-
 // prints a complete deck of 52 cards.
-void printDeck(const std::array<Card, 52> &deck)
+void printDeck(const std::array<CardStruct, 52> &deck)
 {
 	for (const auto &card : deck)
 	{
@@ -104,11 +122,11 @@ void printDeck(const std::array<Card, 52> &deck)
 }
 
 // swaps two cards
-void swapCard(Card &a, Card &b)
+void swapCard(CardStruct &a, CardStruct &b)
 {
 	// Creates a temporary Card variable an initiates with Card a;
 
-	Card temp = a;
+    CardStruct temp = a;
 
 	// swaps card a and b
 
@@ -120,7 +138,7 @@ void swapCard(Card &a, Card &b)
 
 
 // shuffles a complete deck of cards of 52 cards.
-void shuffleDeck(std::array<Card, 52> &deck)
+void shuffleDeck(std::array<CardStruct, 52> &deck)
 {
 	// Step through each card in the deck
 	for (int index = 0; index < 52; ++index)
@@ -132,33 +150,18 @@ void shuffleDeck(std::array<Card, 52> &deck)
 	}
 }
 // Returns the value of a card
-int getCardValue(const Card &card)
+int getCardValue(const CardStruct &card)
 {
-	switch (card.rank)
-	{
-	case Cards::RANK_2:			return 2;
-	case Cards::RANK_3:			return 3;
-	case Cards::RANK_4:			return 4;
-	case Cards::RANK_5:			return 5;
-	case Cards::RANK_6:			return 6;
-	case Cards::RANK_7:			return 7;
-	case Cards::RANK_8:			return 8;
-	case Cards::RANK_9:			return 9;
-	case Cards::RANK_10:		return 10;
-	case Cards::RANK_JACK:		return 10;
-	case Cards::RANK_QUEEN:		return 10;
-	case Cards::RANK_KING:		return 10;
-	case Cards::RANK_ACE:		return 11;
-    case Cards::MAX_RANKS:
-    default:
+    for (auto &cardNum : rankArray)
+    {
+        if (cardNum.rank == card.rank)
+            return cardNum.intRank;
+    }
         std::cout << "Error, rank not found. \n";
         return -1;
 	}
 
-	return 0;
-}
-
-bool playBlackJack(std::array<Card, 52> &deck)
+bool playBlackJack(std::array<CardStruct, 52> &deck)
 {
 	int dealerTotal = 0;
 	int playerTotal = 0;
@@ -166,7 +169,7 @@ bool playBlackJack(std::array<Card, 52> &deck)
 	int numAcesDealer = 0;
 
 	// points a pointer to the first card of the deck
-	const Card *cardPtr = &deck[0];
+    const CardStruct *cardPtr = &deck[0];
 
 	// dealer gets a card
 	dealerTotal += getCardValue(*cardPtr);
@@ -256,7 +259,7 @@ int main()
 	// Creates a random shuffled deck
 	srand(static_cast<unsigned int> (time(0)));
 	rand();
-	std::array<Card, 52> deck;
+    std::array<CardStruct, 52> deck;
 
 	int card = 0;
 	for (int suit = 0; suit < Cards::MAX_SUITS; ++suit)
