@@ -103,9 +103,7 @@ void printCard(const CardStruct &card){
 	case Cards::SUIT_DIAMOND:	std::cout << 'D'; break;
 	case Cards::SUIT_HEART:		std::cout << 'H'; break;
 	case Cards::SUIT_SPADE:		std::cout << 'S'; break;
-    case Cards::MAX_SUITS:
-    default:
-		std::cout << "There was no Suit";
+    case Cards::MAX_SUITS:      std::cout << "There was no Suit";
         break;
 	}
 }
@@ -183,10 +181,10 @@ void playPlayer(CardStruct *cardPtr, int &playerTotal, int &numAcesPlayer)
         {
             if (numAcesPlayer != 0)
             {
-                playerTotal = playerTotal - 10;
+                playerTotal -= 10;
                 --numAcesPlayer;
             }
-            if (numAcesPlayer ==0)
+            else if (numAcesPlayer ==0)
                 break;
         }
     }
@@ -206,12 +204,12 @@ void playDealer(CardStruct *cardPtr, int &dealerTotal, int &numAcesDealer, int p
 
         if (dealerTotal > 21)
         {
-            if (numAcesDealer == 0)
+            if (numAcesDealer != 0)
             {
-                dealerTotal = dealerTotal - 10;
+                dealerTotal -= 10;
                 --numAcesDealer;
             }
-            else if (numAcesDealer != 0)
+            else if (numAcesDealer == 0)
                 break;
         }
     }
