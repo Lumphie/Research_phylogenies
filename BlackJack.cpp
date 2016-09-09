@@ -119,34 +119,6 @@ void printDeck(const std::array<CardStruct, 52> &deck)
 	std::cout << '\n';
 }
 
-// swaps two cards
-void swapCard(CardStruct &a, CardStruct &b)
-{
-	// Creates a temporary Card variable an initiates with Card a;
-
-    CardStruct temp = a;
-
-	// swaps card a and b
-
-	a = b;
-
-	// gives b the temporary Card variable
-	b = temp;
-}
-
-
-// shuffles a complete deck of cards of 52 cards.
-void shuffleDeck(std::array<CardStruct, 52> &deck)
-{
-	// Step through each card in the deck
-	for (int index = 0; index < 52; ++index)
-	{
-		// Pick a random card, any card
-		int swapIndex = getRandomNumber(0, 51);
-		// Swap it with the current card
-		swapCard(deck[index], deck[swapIndex]);
-	}
-}
 // Returns the value of a card
 int getCardValue(const CardStruct &card)
 {
@@ -280,7 +252,7 @@ int main()
 		
 	//lets the player play blackjack until he wants to quit.
 		std::cout << "Let's play a game of Black Jack! \n \n";
-		shuffleDeck(deck);
+    std::random_shuffle(std::begin(deck), std::end(deck));
 		if (playBlackJack(deck))
 		{
 			std::cout << "\nCongratulations! you won! \n \n";
