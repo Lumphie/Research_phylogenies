@@ -4,8 +4,8 @@
 ![Whitespace](Whitespace.png)
 [![Codecov logo](Codecov.png)](https://www.codecov.io)
 
-[![Build Status](https://travis-ci.org/Lumphie/research_phylogenies.svg?branch=master)](https://travis-ci.org/Lumphie/research_phylogenies)
-[![codecov.io](https://codecov.io/github/Lumphie/research_phylogenies/coverage.svg?branch=master)](https://codecov.io/github/Lumphie/research_phylogenies?branch=master)
+[![Build Status](https://travis-ci.org/Lumphie/Research_phylogenies.svg?branch=master)](https://travis-ci.org/Lumphie/Research_phylogenies)
+[![codecov.io](https://codecov.io/github/Lumphie/Research_phylogenies/coverage.svg?branch=master)](https://codecov.io/github/Lumphie/Research_phylogenies?branch=master)
 
 
 Research project by Kees Wesselink.
