@@ -1,11 +1,11 @@
-# kees_wesselink
+# Research Protracted Phylogenies from a sexual selection speciation model
 
 [![Travis CI logo](TravisCI.png)](https://travis-ci.org)
 ![Whitespace](Whitespace.png)
 [![Codecov logo](Codecov.png)](https://www.codecov.io)
 
-[![Build Status](https://travis-ci.org/Lumphie/kees_wesselink.svg?branch=master)](https://travis-ci.org/Lumphie/kees_wesselink)
-[![codecov.io](https://codecov.io/github/Lumphie/kees_wesselink/coverage.svg?branch=master)](https://codecov.io/github/Lumphie/kees_wesselink?branch=master)
+[![Build Status](https://travis-ci.org/Lumphie/research_phylogenies.svg?branch=master)](https://travis-ci.org/Lumphie/research_phylogenies)
+[![codecov.io](https://codecov.io/github/Lumphie/research_phylogenies/coverage.svg?branch=master)](https://codecov.io/github/Lumphie/research_phylogenies?branch=master)
 
 
 Research project by Kees Wesselink.
