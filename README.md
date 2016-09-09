@@ -4,8 +4,8 @@
 ![Whitespace](Whitespace.png)
 [![Codecov logo](Codecov.png)](https://www.codecov.io)
 
-[![Build Status](https://travis-ci.org/richelbilderbeek/kees_wesselink.svg?branch=master)](https://travis-ci.org/richelbilderbeek/kees_wesselink)
-[![codecov.io](https://codecov.io/github/richelbilderbeek/kees_wesselink/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/kees_wesselink?branch=master)
+[![Build Status](https://travis-ci.org/Lumphie/kees_wesselink.svg?branch=master)](https://travis-ci.org/Lumphie/kees_wesselink)
+[![codecov.io](https://codecov.io/github/Lumphie/kees_wesselink/coverage.svg?branch=master)](https://codecov.io/github/Lumphie/kees_wesselink?branch=master)
 
 
 Research project by Kees Wesselink.
@@ -20,9 +20,10 @@ Research project by Kees Wesselink.
 
 ## Scientific articles 
 
- * [1] Van Doorn, G. S., & Weissing, F. J. (2001). Ecological versus sexual selection models of sympatric speciation. Selection, 2, 17 - 40. 
+ * [1] Van Doorn, G. S., & Weissing, F. J. (2001). "Ecological versus sexual selection models of sympatric speciation." Selection, 2, 17 - 40. 
  * [2] Etienne, Rampal S., and James Rosindell. "Prolonging the past counteracts the pull of the present: protracted speciation can explain observed slowdowns in diversification." Systematic Biology (2011): syr091.
  * ([My current work](https://github.com/richelbilderbeek/Cer2016/blob/master/doc/Cer2016.pdf))
+ * [3] Janzen, Thijs, Höhna, Sebastian, Etienne, Rampal S. "Approximate Bayesia n Computation of diversiﬁcatio nrates from molecular phylogenies: introducing a newefﬁcient summary statistic, the nLTT." Methods in ECology and Evolution (2015), 6, 566 - 575.
 
 ## Scientific presentations
 
