@@ -1,0 +1,19 @@
+TODO:
+
+* Presentation monday 31st oct
+	- Research Question 
+	- Why?
+	- What's (not) known?
+	- Biological context
+	- Method
+	- Hypothesis
+	- Discussion
+	- References
+
+* Verslag (zie presentation)
+
+* Learn working with travis
+
+* Learn working with Kewe workspace
+
+* Learn branching
