@@ -110,13 +110,13 @@ https://github.com/Richelbilderbeek/pbdmms
 ## 5.	Discussion
 
 ## References
-•	[1] Van Doorn, G. S., & Weissing, F. J. (2001). "Ecological versus sexual selection models of sympatric speciation." Selection, 2, 17 - 40.
-•	[2] Etienne, Rampal S., and James Rosindell. (2011) "Prolonging the past counteracts the pull of the present: protracted speciation can explain observed slowdowns in diversification." Systematic Biology: syr091.
-•	[3] Janzen, Thijs, Höhna, Sebastian, Etienne, Rampal S. (2015) "Approximate Bayesia n Computation of diversiﬁcatio nrates from molecular phylogenies: introducing a newefﬁcient summary statistic, the nLTT." Methods in ECology and Evolution 6, 566 - 575.
-•	[4] (My current work)
-•	[5] Kendall, D. G. (1948) “On some modes of population growth giving rise to R.A. Fisher’s logarithmic series distribution.” Biometrika, 35, 6 – 15
-•	[6] Poulton, E. B. (1904) "What is a species?" Proceedings of the Entomological Society of London, 1903, 77–116
-•	[7] Gavrilets, S. (2003) “Perspective: Models of Speciation: What have we learned in 40 years?” Evolution, 57(10), 2197-2215
-•	[8] Van Doorn, G. S. (2004) “Sexual selection and sympatric speciation.” Diss University of Groningen, the Netherlands.
-•	[9] Fitzpatrick, B.M., Fordyce, J.A. and Gavrilets, S. (2008) “What, if anything, is sympatric speciation?”, Evolutionary Biology, 21(6), 1452-1459
+ *	[1] Van Doorn, G. S., & Weissing, F. J. (2001). "Ecological versus sexual selection models of sympatric speciation." Selection, 2, 17 - 40.
+ *	[2] Etienne, Rampal S., and James Rosindell. (2011) "Prolonging the past counteracts the pull of the present: protracted speciation can explain observed slowdowns in diversification." Systematic Biology: syr091.
+ *	[3] Janzen, Thijs, Höhna, Sebastian, Etienne, Rampal S. (2015) "Approximate Bayesia n Computation of diversiﬁcatio nrates from molecular phylogenies: introducing a newefﬁcient summary statistic, the nLTT." Methods in ECology and Evolution 6, 566 - 575.
+ * [4] (My current work)
+ *	[5] Kendall, D. G. (1948) “On some modes of population growth giving rise to R.A. Fisher’s logarithmic series distribution.” Biometrika, 35, 6 – 15
+ * [6] Poulton, E. B. (1904) "What is a species?" Proceedings of the Entomological Society of London, 1903, 77–116
+ *	[7] Gavrilets, S. (2003) “Perspective: Models of Speciation: What have we learned in 40 years?” Evolution, 57(10), 2197-2215
+ *	[8] Van Doorn, G. S. (2004) “Sexual selection and sympatric speciation.” Diss University of Groningen, the Netherlands.
+ *	[9] Fitzpatrick, B.M., Fordyce, J.A. and Gavrilets, S. (2008) “What, if anything, is sympatric speciation?”, Evolutionary Biology, 21(6), 1452-1459
 
