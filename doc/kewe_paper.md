@@ -120,3 +120,54 @@ https://github.com/Richelbilderbeek/pbdmms
  *	[8] Van Doorn, G. S. (2004) “Sexual selection and sympatric speciation.” Diss University of Groningen, the Netherlands.
  *	[9] Fitzpatrick, B.M., Fordyce, J.A. and Gavrilets, S. (2008) “What, if anything, is sympatric speciation?”, Evolutionary Biology, 21(6), 1452-1459
 
+# Nu in het Nederlands en een stuk uitgebreider
+
+## Inleiding
+Wanneer we om ons heen kijken zien we ontzettend veel diersoorten. Deze zijn allemaal ontstaan uit één soort. Hoe we precies van één soort tot alle soorten die we nu hebben zijn gekomen is nog niet geheel duidelijk. Hier bestaan vele theorieën over. De meest bekende is misschien wel allopatrische soortvorming. [REF]  Hierbij wordt een originele populatie geografisch gescheiden waarna de twee nieuwe populaties genotypisch of fenotypisch divers worden. Dit kan komen door selectiedruk of genetische drift. [REF] Als daarna de fysieke barrière wordt opgeheven kan het zijn dat individuen van de twee populaties niet langer kunnen paren. Er is dan een nieuwe soort.
+Een veel minder onderzochte vorm van soortvorming is sympatrische soortvorming. Hierbij blijft de originele populatie binnen dezelfde geografische locatie. Als individuen rond het optimum van een ecologische distributie veel competitie ervaren ontstaat er disruptieve selectie (van Doorn & Weissing, 2001). Daarbij ontstaan er twee nieuwe populaties die net een iets andere ecologische niche bezetten (van Doorn & Weissing, 2001).
+Soortvorming wordt veel onderzocht met theoretische modellen. Met deze modellen worden zo veel mogelijke aspecten van soortvorming één voor één aangepakt om steeds dichter bij de werkelijkheid te komen. Zo kan men het hele proces van diversificatie beter begrijpen en ook er achter komen hoe we al die miljoenen soorten uiteindelijk zijn ontstaan.
+Aangezien deze modellen een versimpeling van de werkelijkheid zijn wordt soms een mechanisme achterwege gelaten. Zoals bij het Protracted Birth-Death (PBD) model van Etienne en Rosindell (2011). In hun paper geven ze expliciet aan dat er niet is gekozen voor een mechanisme, maar dit model werkt sowieso voor allopatrische soortvorming [REF]. De vraag is dan ook of dit model )zonder een mechanisme) ook werkt voor sympatrische soortvorming, en zo niet of het dan geïmplementeerd moet worden. 
+Is or should sympatric speciation be implemented in the Protracted Birth-Death model?
+
+## Sexual and Ecological Selection (SES) model
+Om deze vraag te kunnen beantwoorden zal ik het PBD model van Etienne en Rosindell (2011) moeten vergelijken met een model dat sympatrische soortvorming probeert te verklaren. Eén zo’n model is het Ecological and sexual selection model van van Doorn en Weissing (2001). In dit model hebben ze geprobeerd oudere modellen met ofwel ecologische selectie ofwel sexuele selectie. Ze proberen te verklaren wanneer en ook hoe sympatrische soortvorming kan ontstaan. 
+In het model hebben alle individuen drie erfelijke eigenschappen: een ecological type, een male trait en een female preference voor die trait. Aan het begin wordt een individu gekozen en haar mortality rate berekend. Dit wordt gedaan met de volgende formule: 
+mi= γ (∑_k▒〖gc(xi-xk)〗)/(gk(xi))
+Hierbij is mi de mortality rate van individu i, γ een constante to scale the carrying capacity of the system, ∑_k▒〖gc(xi-xk)〗 is de competitie die individu i ervaart met alle andere individuen in de populatie en gk(xi) is de fitness die hoort bij het ecotype van individu i (deze ligt op een gaussian curve met breedte σK). Het omgekeerde hier van, 1 – mi, is de survival rate. De survival rate is de kans die een individu heeft om te overleven. 
+Als het gekozen individu het overleeft dan wordt er een tweede individu gekozen, waarbij het individu met de hoogste attractiveness de grootste kans heeft om gekozen te worden. De attractiveness wordt berekend door de waarde op de gaussian curve gm bij het verschil tussen de preference van i en de male trait van het tweede individu te vermenigvuldigen met de waarde op de gaussian curve ge bij het verschil tussen de ecological types van i en het tweede individu. Hier komt een waarde tussen 0 en 1 uit en dit staat voor de kans dat de twee gekozen individuen met elkaar paren. Een bevrucht vrouwtje produceert b nakomelingen en daarna sterft zij. Ook heeft het eerste individu een kans η om niet te paren. De waarde van η ligt dan hoger als het zoeken van een partner kostbaar is. Dit wordt allemaal gedaan tot alle individuen zijn geweest en dan begint de volgende generatie. 
+
+## Protracted Birth-Death (PBD) model
+Het PBD model van Etienne en Rosindell is een uitbreiding op het Birth-Death (BD) model van Kendal (1948). In het BD model ontstaan (zonder mechanisme) met een constante rate nieuwe soorten en kunnen soorten ook met een constante rate uitsterven. Iets wat er nog niet klopt in dit model is dat er aan het einde een plotselinge stijging is van het aantal soorten (Etienne en Rosindell, 2011), ook wel de pull of the present genoemd. Het Protracted Birth-Death model lost dit op door nieuwe soorten eerst incipient te maken en met een constante rate deze incipient soorten goede soorten te laten worden. De in het heden nog incipient soorten worden niet meegenomen bij de telling van het aantal soorten (zie figuur X). Op deze manier stellen de incipient soorten populaties voor die al wel bestaan, maar nog niet als soort erkend worden. Op dit moment zijn er verder nog geen verschillen tussen de incipient en de goede soorten. Beide soorten hebben dezelfde birth en dezelfde extinction rate.  Het PBD model  gaat er van uit dat er geen gene flow is tussen twee (incipient) soorten en is daarmee dus allopatrisch. Echter zoals eerder vermeld wordt er geen mechanisme aan verbonden. 
+
+## Verschillen PBD en SES
+Beide modellen zijn in bijna alle aspecten het tegenovergestelde. SES heeft een mechanisme op individu niveau, terwijl PBD dit juist niet heeft. PBD lijkt allopatrisch en SES juist sympatrisch. Bij het SES model is gene flow tussen oude en nieuwe soorten mogelijk, al is die kans wel heel erg klein. Als de kans namelijk te groot wordt dan vloeit de nieuwe soort terug bij de oude soort voordat daadwerkelijk ‘branching’ kan plaatsvinden. 
+
+## Dit onderzoek
+Het is onduidelijk of het PBD model ook geldt voor sympatrische soortvorming. Aangezien het originele model bewust een mechanisme achterwege laat. Daarom gaat dit onderzoek de uitkomsten van beide modellen vergelijken om te zien of en waar de verschillen zijn. Veel onderzoek naar sympatrische soortvorming is er nog niet gedaan. Daarom is het handig om te kijken hoeveel verschillen er daadwerkelijk zijn met allopatrische soortvorming.
+In dit onderzoek worden beide modellen aan elkaar aangepast zodat ze goed vergelijkbaar worden. Aan het begin van dit onderzoek bevat het SES model nog veel ingewikkelde “overbodige” methodes om tot de resultaten te komen. Ook moeten zo veel mogelijk variabelen gelijk gemaakt worden om goede conclusies te kunnen trekken.
+
+## Vernieuwing
+Beide modellen zijn nog niet eerder met elkaar vergeleken. Ook wordt bij onderzoek naar sympatrische soortvorming vaak naar de unieke scenario’s gezocht (Gavrilets, 2003) en ook veel naar de verschillen met allopatrische soortvorming gekeken. In dit onderzoek wordt er geprobeerd juist te kijken naar wat er overeenkomt en of beide manieren van soortvorming ook echt zo veel verschillen als er beweerd wordt.
+
+## Hypothese
+Het PBD model zal waarschijnlijk niet  te veel gaan verschillen met het SES model. Dat zou betekenen dat het PBD model gebruikt kan worden voor sympatrische soortvorming. Dit is logisch aangezien je het incipient gedeelte van een soort ook kan zien als de verminderde gene flow die er plaats vindt bij sympatrische soortvorming, in plaats van helemaal geen gene flow zoals op dit moment beweerd wordt.
+
+## Methode
+Beide modellen gebruiken erg verschillende parameters. Om er voor te zorgen dat er geen onvergelijkbare dingen worden vergeleken worden de fylogenetische bomen van het SES model met een maximum-likelihood gebruiken om de parameters van het PBD te verkrijgen. Met die parameters kan het PBD model dan gerund worden.
+Van beide modellen zal dan een normalized Lineage Through Time plot gemaakt worden. De oppervlakte tussen beide plots geeft het verschil weer tussen beide fylogenetische bomen (Janzen et al., 2015). 
+Voor een nLTT plot moet het SES model aangepast worden. SES geeft namelijk de genormaliseerde aantallen van alle ecotypes, female preferences en male traits door de tijd weer. Een lineage kan worden bepaald door de attractiveness tussen alle individuen uit te rekenen. Tussen alle individuen waar een redelijk grote kans (5%) is dat ze paren wordt een lijn getrokken en alle individuen waar een lijntje tussen zit worden geclusterd met behulp van een Boost library. [REF] De verschillende groepen die dan gevormd worden zijn ieder hun eigen lineage / soort.
+
+## Peripherals
+
+###	Software
+https://github.com/Richelbilderbeek/pbdmms
+###	Hardware
+Super Cluster van de Rug
+
+ 
+## Resultaten
+Die zijn er natuurlijk nog niet, maar ik kan wel voorspellen hoe ze er uit gaan zien.  
+Boven: erg veel verschil, Onder: weinig verschil.
+Conclusie en Discussie
+Op dit moment kan ik nog niks concluderen, ook al denk ik wel dat ik gelijk ga hebben.
+
