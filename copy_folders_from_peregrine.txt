@@ -1,0 +1,4 @@
+cd peregrine
+mkdir sep_final_simulations
+cd ..
+scp -r s2260050@peregrine.hpc.rug.nl:/home/s2260050/pbdmms/sep_final_simulations/sim*/ ~/peregrine/sep_final_simulations

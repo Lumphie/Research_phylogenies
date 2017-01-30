@@ -1,0 +1,49 @@
+#!/bin/bash
+#SBATCH --time=8-12:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks=1
+#SBATCH --mem=100G
+#SBATCH --job-name=kewe_sado_I
+#SBATCH --mail-type=BEGIN,END
+#SBATCH --output=kewe_sado_I.log
+module load Qt
+module load GCC/5.1.0
+
+export DISPLAY=localhost:1.0
+sleep 3 # give xvfb some time to start
+
+
+for i in {1..100}
+do
+   mkdir "sim${i}"
+   cd "sim${i}"
+   ln ../sado_peregrine_2
+
+   echo 'b 4
+end 2000
+erasure_method swap
+eta 1
+gausser_implementation lut
+histbin 0.1 0.1 0.1
+initialization_bug 0
+next_gen_method seperate
+output 10 output.txt
+sc 0.6
+sv 0.02
+se 0.5
+pop0 1000
+c 0.0005
+sm 0.2
+sq 1.0
+type0 0 0 0' > kewe_sado_parameters${i}.txt
+
+echo "seed ${i}" >> kewe_sado_parameters${i}.txt
+
+sk=$(printf '%s * %s\n' "$i" "0.05" | bc)
+echo "sk $sk" >> kewe_sado_parameters${i}.txt
+ 
+   # Do a run
+   xvfb-run -a ./sado_peregrine_2 kewe_sado_parameters${i}.txt
+   cd ..
+done

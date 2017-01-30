@@ -1,0 +1,14 @@
+mkdir male_traits
+mkdir fem_prefs
+mkdir eco_traits
+
+
+for i in {1..100}
+do
+
+cp -a "sim$i"/male_traits.png male_traits/male_traits$i.png
+cp -a "sim$i"/fem_prefs.png fem_prefs/fem_prefs$i.png
+cp -a "sim$i"/eco_traits.png eco_traits/eco_traits$i.png
+echo "done $i"
+
+done
